@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Rakhi">
+<listeners>
+	<listener class-name = "com.training.tekarch.listeners.TestListener"></listener>
+</listeners>
+    <test name ="group test" verbose="2" preserve-order="true">
+        <groups>
+            <run>
+              <include name = "abcd"></include>            
+            </run>
+        </groups>
+        <classes>
+            <class name="com.training.tekarch.test.LoginTest"></class>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [TestNG Group Test]">
+  <listeners>
+    <listener class-name="com.training.tekarch.listeners.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="group test(failed)">
+    <groups>
+      <run>
+        <include name="abcd"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.training.tekarch.test.LoginTest">
+        <methods>
+          <include name="TC02_navigateToSalesForceHomePage"/>
+          <include name="TC01_verifyBlankpasswordLoginError"/>
+        </methods>
+      </class> <!-- com.training.tekarch.test.LoginTest -->
+    </classes>
+  </test> <!-- group test(failed) -->
+</suite> <!-- Failed suite [TestNG Group Test] -->
