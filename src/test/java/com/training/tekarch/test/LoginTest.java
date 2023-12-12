@@ -48,7 +48,7 @@ public class LoginTest extends BaseTest {
 
 	@Test(groups= {"abcd"})
 	public void TC01_verifyBlankpasswordLoginError() {
-		
+		//added a comment
 		String actualTitle = loginPage.getPageTitle();
 		Assert.assertEquals(actualTitle, loginPage.EXPECTED_LOGINPAGE_TITLE);
 
